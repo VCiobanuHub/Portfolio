@@ -4,18 +4,20 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "vite --mode staging",
+    "build": "tsc && vite build --mode production",
     "preview": "vite preview"
   },
   "dependencies": {
     "@sanity/client": "^3.3.3",
     "@sanity/image-url": "^1.0.1",
+    "dotenv": "^16.0.1",
     "framer-motion": "^7.0.0",
     "node-sass": "^7.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.4.0"
+    "react-icons": "^4.4.0",
+    "url": "^0.11.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.15",
